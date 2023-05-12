@@ -2,11 +2,12 @@
     box-sizing: border-box;	
 }	
 :root{
-    --color: #FFB900;
+    --primary-color:#ffb900;
     --font-heading: Sen,sans-serif;
  }
 html {	
-    font-size: 62.5%;	
+    font-size: 62.5%;
+    color:ffb900;	
     /* nếu không khai báo thì font size mặc định là 1 rem=10px */
 }	
 body {	
@@ -29,9 +30,23 @@ a {
     background: #171100;	
     border-radius: 999px;	
 }
+.heading{
+    font-weight: 700;
+    font-family:  var(--font-heading);
+    letter-spacing: -0.02em;
+    color: #171100;
+ }
 .btn:hover{
  opacity: 0.9;
 }	
+.heading.lv1{
+    font-size:5.8rem;
+    line-height: 1.17;
+}
+.heading.lv2{
+    font-size: 3.8rem;
+    line-height: 1.26;
+}
 .main-content {	
     width: 1170px;	
     max-width: calc(100% - 48px);	
@@ -163,15 +178,7 @@ a {
     width: 52%;
     padding: 64px  0 0 130px;
  }
- .hero .content-block .heading{
-    font-weight: 700;
-    font-family:  var(--font-heading);
-    font-size: 5.8rem;
-    line-height: 1.17;
-    /* or 117% */
-    letter-spacing: -0.02em;
-    color: #171100;
- }
+ 
  .hero .desc{
     font-weight: 400;
     font-size: 1.8rem;
@@ -217,7 +224,6 @@ a {
     color: #171100;
 }
 .hero .stats{
-
     margin-left: 8px 0 0 -28px;
 }
 .hero .stats strong{
@@ -228,3 +234,45 @@ a {
     line-height:1.23;
     color:#171100;
 }
+/* Popular */
+popular {
+    padding: 65px 0;
+    margin-top: 135px;
+}
+
+.popular-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular-top .desc {
+    margin-top: 16px;
+    width: 458px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+
+.popular-top .controls {
+    display: flex;
+    gap: 18px;
+}
+
+.popular-top .control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background: transparent;
+}
+.popular-top .control-btn:hover {
+    color: #fff;
+    background: var(--primary-color);
+    cursor: pointer;
+}
+
