@@ -59,7 +59,7 @@ btn :hover{
  opacity: 0.9;
 }	
 .heading.lv1{
-    font-size:5.8rem;
+    font-size:5.9rem;
     line-height: 1.17;
 }
 .heading.lv2{
@@ -479,3 +479,19 @@ popular {
     color:white;
     background: var(--primary-color);
 }
+.features-2nd .image img {
+    width: 470px;
+    height: 440px;
+    object-fit: cover;
+    margin-left: auto;
+}
+.features-2nd .body{
+    flex-direction: row-reverse;
+}
+.features-2nd{
+    margin-top: 70px;
+}
+.features-2nd .content{
+    width: 49%;
+}
+
